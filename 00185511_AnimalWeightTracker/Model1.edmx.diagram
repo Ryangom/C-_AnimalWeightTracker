@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="138348d22d394819bee96be875ab7dea" Name="Diagram1">
+        <EntityTypeShape EntityType="DatabaseModel.activity" Width="1.5" PointX="7.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.animal" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.course" Width="1.5" PointX="7.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.daily_exercise" Width="1.5" PointX="12" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.daily_log" Width="1.5" PointX="9.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.daily_meal" Width="1.5" PointX="12" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.daily_measurement" Width="1.5" PointX="12" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.exercise" Width="1.5" PointX="9.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.meal" Width="1.5" PointX="9.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.organization" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.organizationType" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.species" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.staff" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="DatabaseModel.FK_activity" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_animal_Speciess" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_animale_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_Org_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_course" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_staff" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_daylog" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_excers" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_dlog" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_log" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_meal" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_organization_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_staff_ToTable" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

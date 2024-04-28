@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="DatabaseEntities">
+    <EntitySetMapping Name="activities">
+      <EntityTypeMapping TypeName="DatabaseModel.activity">
+        <MappingFragment StoreEntitySet="activity">
+          <ScalarProperty Name="activity_Id" ColumnName="activity_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="animals">
+      <EntityTypeMapping TypeName="DatabaseModel.animal">
+        <MappingFragment StoreEntitySet="animal">
+          <ScalarProperty Name="animal_Id" ColumnName="animal_Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="species_Id" ColumnName="species_Id" />
+          <ScalarProperty Name="organization_Id" ColumnName="organization_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="courses">
+      <EntityTypeMapping TypeName="DatabaseModel.course">
+        <MappingFragment StoreEntitySet="course">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="animal_Id" ColumnName="animal_Id" />
+          <ScalarProperty Name="staff_id" ColumnName="staff_id" />
+          <ScalarProperty Name="goal" ColumnName="goal" />
+          <ScalarProperty Name="BMI" ColumnName="BMI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="daily_exercise">
+      <EntityTypeMapping TypeName="DatabaseModel.daily_exercise">
+        <MappingFragment StoreEntitySet="daily_exercise">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="exercise_id" ColumnName="exercise_id" />
+          <ScalarProperty Name="exercise_dates" ColumnName="exercise_dates" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="daily_log">
+      <EntityTypeMapping TypeName="DatabaseModel.daily_log">
+        <MappingFragment StoreEntitySet="daily_log">
+          <ScalarProperty Name="log_Id" ColumnName="log_Id" />
+          <ScalarProperty Name="course_id" ColumnName="course_id" />
+          <ScalarProperty Name="activity_id" ColumnName="activity_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="progress" ColumnName="progress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="daily_meal">
+      <EntityTypeMapping TypeName="DatabaseModel.daily_meal">
+        <MappingFragment StoreEntitySet="daily_meal">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+          <ScalarProperty Name="meal_id" ColumnName="meal_id" />
+          <ScalarProperty Name="meal_intake" ColumnName="meal_intake" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="daily_measurement">
+      <EntityTypeMapping TypeName="DatabaseModel.daily_measurement">
+        <MappingFragment StoreEntitySet="daily_measurement">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+          <ScalarProperty Name="waist_size" ColumnName="waist_size" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="shift" ColumnName="shift" />
+          <ScalarProperty Name="Excersice_date" ColumnName="Excersice_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exercises">
+      <EntityTypeMapping TypeName="DatabaseModel.exercise">
+        <MappingFragment StoreEntitySet="exercise">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="calories_burn" ColumnName="calories_burn" />
+          <ScalarProperty Name="exercise_type" ColumnName="exercise_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="meals">
+      <EntityTypeMapping TypeName="DatabaseModel.meal">
+        <MappingFragment StoreEntitySet="meal">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="unit_in_gram" ColumnName="unit_in_gram" />
+          <ScalarProperty Name="caloriers" ColumnName="caloriers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="organizations">
+      <EntityTypeMapping TypeName="DatabaseModel.organization">
+        <MappingFragment StoreEntitySet="organization">
+          <ScalarProperty Name="Organization_Id" ColumnName="Organization_Id" />
+          <ScalarProperty Name="orgName" ColumnName="orgName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="type_id" ColumnName="type_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="organizationTypes">
+      <EntityTypeMapping TypeName="DatabaseModel.organizationType">
+        <MappingFragment StoreEntitySet="organizationType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="species">
+      <EntityTypeMapping TypeName="DatabaseModel.species">
+        <MappingFragment StoreEntitySet="species">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Species_name" ColumnName="Species_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="staffs">
+      <EntityTypeMapping TypeName="DatabaseModel.staff">
+        <MappingFragment StoreEntitySet="staff">
+          <ScalarProperty Name="staff_Id" ColumnName="staff_Id" />
+          <ScalarProperty Name="Staff_name" ColumnName="Staff_name" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="staff_address" ColumnName="staff_address" />
+          <ScalarProperty Name="deg" ColumnName="deg" />
+          <ScalarProperty Name="org_id" ColumnName="org_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
